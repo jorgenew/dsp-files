@@ -18,10 +18,11 @@ public class Main {
         BufferedReader bufferReader = new BufferedReader(inputStreamReader);
         //int  i = inputStream.read();
         //int t = inputStreamReader.read();
-        String line;
-        while((line = bufferReader.readLine()) != null){
+        
+        String line = bufferReader.readLine();
+        while(line != null){
             System.out.println(line);
-
+            line = bufferReader.readLine();
         }
         
     }
